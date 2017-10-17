@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.jonmid.segundoparcial.Array.Images;
 import com.jonmid.segundoparcial.R;
 import com.squareup.picasso.Picasso;
 
@@ -26,12 +27,9 @@ public class DetailActivity extends AppCompatActivity {
         textViewname = (TextView) findViewById(R.id.id_tv_namedetail);
         textViewcode = (TextView) findViewById(R.id.id_tv_codedetail);
 
-        Bundle a = getIntent().getExtras();
-        textViewname.setText(getText(a.getInt("name")));
-        textViewcode.setText(getText(a.getInt("code")));
-        Picasso
-
-
+        textViewname.setText("name");
+        textViewcode.setText("code");
+        Picasso.with(imageView.getContext()).load(Images.imageRandom()).into(imageView);
 
 
 
