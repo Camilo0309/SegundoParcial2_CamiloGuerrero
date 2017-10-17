@@ -29,7 +29,7 @@ public class DetailActivity extends AppCompatActivity {
 
         textViewname.setText("name");
         textViewcode.setText("code");
-        Picasso.with(imageView.getContext()).load(Images.imageRandom()).into(imageView);
+        Picasso.with(this).load(Images.imageRandom()).into(imageView);
 
 
 
